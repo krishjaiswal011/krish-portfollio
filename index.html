@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krish Kumar Jaiswal | Computer Science Engineer & AI Developer Portfolio</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Krish Kumar Jaiswal - Computer Science and Engineering student at Lovely Professional University. AI, Embedded Systems, Full-Stack, and Competitive Programmer with 200+ problems solved and LeetCode 100-Day badge.">
+  <meta name="keywords" content="Krish Kumar Jaiswal, Portfolio, Resume, CV, Computer Science, AI Developer, Lovely Professional University, ECG Heart Monitoring, LeetCode, Software Engineer">
+  <meta name="author" content="Krish Kumar Jaiswal">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Krish Kumar Jaiswal | Software Engineer & AI Developer">
+  <meta property="og:description" content="Explore projects, skills, CV/Resume PDF, certifications, and achievements of Krish Kumar Jaiswal.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for clean modern icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Background Interactive Particles Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+  <div class="bg-glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Krish</span>
+        <span class="brand-dot">.</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+          <li class="nav-item"><a href="#cv" class="nav-link highlight-nav"><i class="fa-solid fa-file-pdf"></i> CV / Resume</a></li>
+          <li class="nav-item"><a href="#timeline" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Journey</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link"><i class="fa-solid fa-award"></i> Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Direct PDF Open Button -->
+        <a href="Krish_Kumar_Jaiswal_Resume.pdf" target="_blank" class="btn btn-primary-sm cv-quick-btn" title="Open CV PDF in new tab">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <span>Open CV (PDF)</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot pulse"></span>
+            <span>Available for Internships & Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Krish Kumar Jaiswal</span>
+          </h1>
+
+          <div class="typewriter-wrapper">
+            <span class="typewriter-prefix">I am a </span>
+            <span id="typewriter-text" class="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Computer Science & Engineering undergraduate at <strong>Lovely Professional University</strong> with a passion for building AI-driven systems, embedded IoT devices, and full-stack software. Dedicated problem solver with 200+ coding challenges solved and a LeetCode 100-Day streak.
+          </p>
+
+          <!-- Quick Connect Buttons & Badges -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            
+            <!-- Direct CV Action Buttons -->
+            <a href="Krish_Kumar_Jaiswal_Resume.pdf" target="_blank" class="btn btn-accent-glow" id="hero-open-cv-pdf">
+              <i class="fa-solid fa-file-pdf"></i> Open CV (PDF)
+            </a>
+
+            <a href="Krish_Kumar_Jaiswal_Resume.pdf" download="Krish_Kumar_Jaiswal_Resume.pdf" class="btn btn-glass" title="Download CV PDF">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+
+            <button class="btn btn-outline" id="quick-copy-email-hero" title="Click to copy email">
+              <i class="fa-solid fa-copy"></i> Copy Email
+            </button>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links-bar">
+            <a href="https://www.linkedin.com/in/krish-jaiswal-2b0682354em/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/krishjaiswal011" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:krishjaiswal1314@gmail.com" class="social-link" title="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+917209810196" class="social-link" title="Call Mobile">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Floating Tech Card -->
+        <div class="hero-visual">
+          <div class="code-card glass-panel">
+            <div class="code-card-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="code-card-title"><i class="fa-solid fa-terminal"></i> krish_profile.py</span>
+              <span class="code-card-tag">Python 3.11</span>
+            </div>
+            <div class="code-card-body">
+              <pre><code><span class="keyword">class</span> <span class="class-name">SoftwareEngineer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.name = <span class="string">"Krish Kumar Jaiswal"</span>
+        self.university = <span class="string">"Lovely Professional University"</span>
+        self.degree = <span class="string">"B.Tech CSE"</span>
+        self.cv_document = <span class="string">"Krish_Kumar_Jaiswal_Resume.pdf"</span>
+        self.core_stack = [<span class="string">"Java"</span>, <span class="string">"Python"</span>, <span class="string">"JavaScript"</span>, <span class="string">"C/C++"</span>]
+        self.problem_solving = <span class="string">"200+ Solved | 100-Day Streak"</span>
+
+    <span class="keyword">def</span> <span class="function">get_current_focus</span>(self):
+        <span class="keyword">return</span> {
+            <span class="string">"focus"</span>: <span class="string">"AI Systems & Embedded IoT"</span>,
+            <span class="string">"open_to_work"</span>: <span class="boolean">True</span>,
+            <span class="string">"ready_to_collaborate"</span>: <span class="boolean">True</span>
+        }
+
+krish = SoftwareEngineer()
+<span class="function">print</span>(krish.get_current_focus())</code></pre>
+            </div>
+          </div>
+
+          <!-- Floating Micro Badges -->
+          <div class="floating-badge badge-leetcode">
+            <i class="fa-solid fa-fire"></i>
+            <div>
+              <span class="badge-title">LeetCode 100 Days</span>
+              <span class="badge-subtitle">Daily Consistency Badge</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-hackathon">
+            <i class="fa-solid fa-trophy"></i>
+            <div>
+              <span class="badge-title">I Do Top Hackathon</span>
+              <span class="badge-subtitle">Among 50+ Teams</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY STATS SECTION -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card glass-panel">
+            <div class="stat-icon"><i class="fa-solid fa-code-commit"></i></div>
+            <div class="stat-info">
+              <div class="stat-num-wrapper"><span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span></div>
+              <p class="stat-label">Coding Problems Solved</p>
+            </div>
+          </div>
+
+          <div class="stat-card glass-panel">
+            <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="stat-info">
+              <div class="stat-num-wrapper"><span class="stat-number" data-target="100">0</span><span class="stat-plus"> Days</span></div>
+              <p class="stat-label">I start LeetCode Streak Badge</p>
+            </div>
+          </div>
+
+          <div class="stat-card glass-panel">
+            <div class="stat-icon"><i class="fa-solid fa-ranking-star"></i></div>
+            <div class="stat-info">
+              <div class="stat-num-wrapper"><span class="stat-number-static">Top</span></div>
+              <p class="stat-label">Hackathon Teams</p>
+            </div>
+          </div>
+
+          <div class="stat-card glass-panel">
+            <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="stat-info">
+              <div class="stat-num-wrapper"><span class="stat-number" data-target="2">0</span><span class="stat-plus">+ Core</span></div>
+              <p class="stat-label">Key Systems Built</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-id-badge"></i> Biography</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">A brief overview of my engineering background, mindset, and technical journey.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-header">
+              <div class="avatar-container">
+                <div class="avatar-glow"></div>
+                <div class="avatar-placeholder">
+                  <i class="fa-solid fa-user-gear"></i>
+                </div>
+              </div>
+              <div class="about-title-info">
+                <h3>Krish Kumar Jaiswal</h3>
+                <p class="text-muted"><i class="fa-solid fa-location-dot"></i> Punjab / Bihar, India</p>
+                <div class="about-tags">
+                  <span class="tag">B.Tech CSE</span>
+                  <span class="tag">LPU Student</span>
+                  <span class="tag">AI Explorer</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-body">
+              <p>
+                I am a passionate Computer Science and Engineering student at <strong>Lovely Professional University (LPU)</strong>. My focus lies at the intersection of <strong>Artificial Intelligence</strong>, <strong>Embedded Biomedical Systems</strong>, and <strong>Algorithmic Problem Solving</strong>.
+              </p>
+              <p>
+                Whether it's acquiring and analyzing real-time cardiac waveforms through hardware sensors, developing AI behavioral risk models for student academic focus, or practicing algorithmic optimization every single day, I thrive on solving real-world challenges through code.
+              </p>
+              
+              <div class="highlights-list">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Hands-on AI Experience:</strong> Completed OpenAI × Blocksblock Bootcamp at LPU.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Multidisciplinary Engineering:</strong> Hardware circuit design, signal acquisition & full-stack dashboards.</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Consistent Coder:</strong> Maintained active daily streak and 200+ solved algorithmic problems.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-footer">
+              <div class="contact-pill-list">
+                <div class="contact-pill">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>krishjaiswal1314@gmail.com</span>
+                </div>
+                <div class="contact-pill">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+91 7209810196</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Snapshot Card -->
+          <div class="academic-card glass-panel">
+            <h3 class="card-heading"><i class="fa-solid fa-graduation-cap"></i> Academic Highlights</h3>
+            
+            <div class="academic-timeline">
+              <div class="academic-item">
+                <div class="academic-dot"></div>
+                <div class="academic-content">
+                  <span class="academic-year">Aug 2026 - Present (Ongoing)</span>
+                  <h4>Bachelor of Technology (B.Tech) - CSE</h4>
+                  <p class="academic-inst">Lovely Professional University, Phagwara, Punjab</p>
+                  <span class="grade-badge">CGPA: 6.4</span>
+                </div>
+              </div>
+
+              <div class="academic-item">
+                <div class="academic-dot"></div>
+                <div class="academic-content">
+                  <span class="academic-year">May 2024 - Mar 2025</span>
+                  <h4>Higher Secondary Education (12th Grade)</h4>
+                  <p class="academic-inst">Science & Mathematics Track</p>
+                  <span class="grade-badge">Score: 67.6%</span>
+                </div>
+              </div>
+
+              <div class="academic-item">
+                <div class="academic-dot"></div>
+                <div class="academic-content">
+                  <span class="academic-year">Jun 2022 - Mar 2023</span>
+                  <h4>Secondary School Examination (10th Grade)</h4>
+                  <p class="academic-inst">Narkatiganj, Bihar</p>
+                  <span class="grade-badge highlight">Score: 83.7%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="soft-skills-container">
+              <h4 class="sub-heading"><i class="fa-solid fa-lightbulb"></i> Core Soft Skills</h4>
+              <div class="soft-skills-grid">
+                <div class="soft-pill"><i class="fa-solid fa-brain"></i> Problem Solving</div>
+                <div class="soft-pill"><i class="fa-solid fa-users"></i> Team Collaboration</div>
+                <div class="soft-pill"><i class="fa-solid fa-clock"></i> Time Management</div>
+                <div class="soft-pill"><i class="fa-solid fa-arrows-rotate"></i> High Adaptability</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-sliders"></i> Technical Toolkit</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Proficiencies across programming languages, web technologies, databases, and development tools.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-tabs">
+          <button class="filter-tab active" data-filter="all">All Skills</button>
+          <button class="filter-tab" data-filter="languages">Programming Languages</button>
+          <button class="filter-tab" data-filter="web">Web & Tech</button>
+          <button class="filter-tab" data-filter="tools">Databases & Tools</button>
+          <button class="filter-tab" data-filter="domains">Domains & Core</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap java-icon">
+              <i class="fa-brands fa-java"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>Java</h4>
+                <span class="skill-percent">Proficient</span>
+              </div>
+              <p class="skill-desc">Object-oriented programming, data structures, and algorithmic implementation.</p>
+              <div class="skill-tags">
+                <span>OOP</span>
+                <span>Collections</span>
+                <span>Algorithms</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap python-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>Python</h4>
+                <span class="skill-percent">Certified</span>
+              </div>
+              <p class="skill-desc">Data analysis, AI/ML scripting, and automation. Certified in Fundamentals Pt. 1 & 2.</p>
+              <div class="skill-tags">
+                <span>Scripting</span>
+                <span>AI Logic</span>
+                <span>Data Handling</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap js-icon">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>JavaScript</h4>
+                <span class="skill-percent">Advanced</span>
+              </div>
+              <p class="skill-desc">Modern ES6+, dynamic DOM manipulation, interactive frontend logic, and APIs.</p>
+              <div class="skill-tags">
+                <span>ES6+</span>
+                <span>DOM</span>
+                <span>Async/Fetch</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="languages">
+            <div class="skill-icon-wrap cpp-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>C & C++</h4>
+                <span class="skill-percent">Core</span>
+              </div>
+              <p class="skill-desc">Memory management, pointers, competitive programming, and embedded microcontroller coding.</p>
+              <div class="skill-tags">
+                <span>STL</span>
+                <span>Pointers</span>
+                <span>Embedded</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="skill-card glass-panel" data-category="web">
+            <div class="skill-icon-wrap html-icon">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>HTML5</h4>
+                <span class="skill-percent">Expert</span>
+              </div>
+              <p class="skill-desc">Semantic document structuring, accessibility standards, and clean SEO architecture.</p>
+              <div class="skill-tags">
+                <span>Semantic</span>
+                <span>A11y</span>
+                <span>Canvas API</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="web">
+            <div class="skill-icon-wrap css-icon">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>CSS3 & Modern UI</h4>
+                <span class="skill-percent">Expert</span>
+              </div>
+              <p class="skill-desc">Responsive layouts, Flexbox/CSS Grid, Glassmorphism, animations, and custom themes.</p>
+              <div class="skill-tags">
+                <span>Flexbox</span>
+                <span>Grid</span>
+                <span>Keyframes</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Tools -->
+          <div class="skill-card glass-panel" data-category="tools">
+            <div class="skill-icon-wrap db-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>MySQL & DBMS</h4>
+                <span class="skill-percent">Proficient</span>
+              </div>
+              <p class="skill-desc">Relational schema design, complex joins, indexing, and transactional data queries.</p>
+              <div class="skill-tags">
+                <span>RDBMS</span>
+                <span>Queries</span>
+                <span>Schema Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="tools">
+            <div class="skill-icon-wrap git-icon">
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>Git & GitHub</h4>
+                <span class="skill-percent">Proficient</span>
+              </div>
+              <p class="skill-desc">Branching workflows, version control, open-source collaboration, and repo maintenance.</p>
+              <div class="skill-tags">
+                <span>VCS</span>
+                <span>CI/CD</span>
+                <span>Collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Domains & Core -->
+          <div class="skill-card glass-panel" data-category="domains">
+            <div class="skill-icon-wrap ai-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>Artificial Intelligence</h4>
+                <span class="skill-percent">Applied</span>
+              </div>
+              <p class="skill-desc">Machine learning behavioral modeling, pattern detection, and OpenAI integrations.</p>
+              <div class="skill-tags">
+                <span>OpenAI</span>
+                <span>Risk Analytics</span>
+                <span>Pattern Detection</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel" data-category="domains">
+            <div class="skill-icon-wrap iot-icon">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="skill-details">
+              <div class="skill-info">
+                <h4>Biomedical & Embedded IoT</h4>
+                <span class="skill-percent">Hands-On</span>
+              </div>
+              <p class="skill-desc">Signal acquisition, electrode interfacing, analog-to-digital filtering, and real-time telemetry.</p>
+              <div class="skill-tags">
+                <span>Sensors</span>
+                <span>Signal Proc</span>
+                <span>ECG Telemetry</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="projects-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-laptop-code"></i> Engineering Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world hardware, AI, and software systems engineered with practical impact.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: ECG Heart Monitoring System -->
+          <div class="project-card glass-panel">
+            <div class="project-banner hardware-banner">
+              <div class="project-badge hardware"><i class="fa-solid fa-microchip"></i> Hardware & Embedded</div>
+              <div class="project-date"><i class="fa-solid fa-calendar"></i> Aug 2025</div>
+              
+              <!-- Live Animated ECG Waveform Canvas -->
+              <div class="ecg-visualizer-container">
+                <canvas id="ecg-canvas" width="400" height="140"></canvas>
+                <div class="ecg-bpm-pill">
+                  <i class="fa-solid fa-heart beat-pulse"></i>
+                  <span id="live-bpm">72</span> BPM <span class="live-tag">LIVE SIM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">ECG Heart Monitoring System</h3>
+              <p class="project-subtitle">Real-Time Biomedical Signal Acquisition & Waveform Telemetry</p>
+              
+              <p class="project-description">
+                Engineered an end-to-end hardware & software ECG monitoring system to capture, filter, and stream continuous electrical cardiac signals with real-time heart rate calculation and waveform visualization.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Integrated ECG analog sensors & bio-electrodes for clean cardiac signal acquisition.</span>
+                </div>
+                <div class="ph-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Developed continuous heart rate calculation algorithm with noise reduction filtering.</span>
+                </div>
+                <div class="ph-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Built a dynamic monitoring interface to plot real-time ECG waveforms for diagnostic observation.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag"><i class="fa-solid fa-microchip"></i> Biomedical Sensors</span>
+                <span class="tech-tag"><i class="fa-solid fa-wave-square"></i> Signal Acquisition</span>
+                <span class="tech-tag"><i class="fa-solid fa-code"></i> C / C++</span>
+                <span class="tech-tag"><i class="fa-brands fa-python"></i> Python Telemetry</span>
+                <span class="tech-tag"><i class="fa-solid fa-desktop"></i> Real-time UI</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary-sm open-project-modal" data-project="ecg">
+                  <i class="fa-solid fa-circle-info"></i> System Deep Dive
+                </button>
+                <a href="https://github.com/krishjaiswal011" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: AI Academic Focus & Digital Addiction Risk Monitor -->
+          <div class="project-card glass-panel">
+            <div class="project-banner ai-banner">
+              <div class="project-badge ai"><i class="fa-solid fa-brain"></i> AI & Behavioral Analytics</div>
+              <div class="project-date"><i class="fa-solid fa-calendar"></i> Sep 2025 - Oct 2025</div>
+              
+              <!-- Interactive Mini Risk Score Calculator Widget -->
+              <div class="ai-demo-widget">
+                <div class="ai-widget-header">
+                  <span><i class="fa-solid fa-chart-line"></i> Interactive Risk Engine Demo</span>
+                </div>
+                <div class="ai-widget-controls">
+                  <div class="input-slider-group">
+                    <label>Daily Screen Time: <strong id="val-screen">6</strong> hrs</label>
+                    <input type="range" id="slider-screen" min="1" max="14" value="6">
+                  </div>
+                  <div class="input-slider-group">
+                    <label>Focused Study Time: <strong id="val-study">3</strong> hrs</label>
+                    <input type="range" id="slider-study" min="0" max="10" value="3">
+                  </div>
+                </div>
+                <div class="ai-widget-result">
+                  <div class="risk-gauge">
+                    <span class="gauge-label">Calculated Addiction Risk:</span>
+                    <span id="risk-score-badge" class="risk-score-badge medium">Moderate (48%)</span>
+                  </div>
+                  <div class="focus-index">
+                    <span>Focus Score: <strong id="focus-score-val">65/100</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">AI Academic Focus & Digital Addiction Risk Monitor</h3>
+              <p class="project-subtitle">Behavioral Analytics & Student Health Dashboard</p>
+              
+              <p class="project-description">
+                An intelligent behavioral monitoring solution designed to track students' digital engagement, quantify distraction indices, and generate early intervention warnings against digital addiction.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Evaluates multi-dimensional variables: screen time, app switching, study duration & idle patterns.</span>
+                </div>
+                <div class="ph-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Designed interactive monitoring dashboard displaying focus scores and personalized health insights.</span>
+                </div>
+                <div class="ph-item">
+                  <i class="fa-solid fa-check"></i>
+                  <span>Engineered modular micro-services for telemetry logging, risk scoring, and automated reports.</span>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag"><i class="fa-brands fa-python"></i> Python AI/ML</span>
+                <span class="tech-tag"><i class="fa-solid fa-brain"></i> Behavioral Analysis</span>
+                <span class="tech-tag"><i class="fa-brands fa-js"></i> JavaScript UI</span>
+                <span class="tech-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+                <span class="tech-tag"><i class="fa-solid fa-chart-pie"></i> Data Analytics</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary-sm open-project-modal" data-project="ai-monitor">
+                  <i class="fa-solid fa-circle-info"></i> Architecture Overview
+                </button>
+                <a href="https://github.com/krishjaiswal011" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm">
+                  <i class="fa-brands fa-github"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DEDICATED CV / RESUME SECTION -->
+    <section id="cv" class="cv-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-file-invoice"></i> Curriculum Vitae</span>
+          <h2 class="section-title">Curriculum <span class="gradient-text">Vitae (CV)</span></h2>
+          <p class="section-subtitle">View my verified resume online, download the official PDF, or open it in full screen.</p>
+        </div>
+
+        <div class="cv-showcase-card glass-panel">
+          <div class="cv-action-bar">
+            <div class="cv-bar-left">
+              <div class="cv-doc-info">
+                <i class="fa-solid fa-file-pdf pdf-red-icon"></i>
+                <div>
+                  <h4 class="cv-doc-title">Krish_Kumar_Jaiswal_Resume.pdf</h4>
+                  <span class="cv-doc-sub">Official Verified Resume • B.Tech CSE</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-bar-actions">
+              <!-- Primary Open in New Tab -->
+              <a href="Krish_Kumar_Jaiswal_Resume.pdf" target="_blank" class="btn btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open PDF in New Tab
+              </a>
+
+              <!-- Direct Download -->
+              <a href="Krish_Kumar_Jaiswal_Resume.pdf" download="Krish_Kumar_Jaiswal_Resume.pdf" class="btn btn-glass">
+                <i class="fa-solid fa-download"></i> Download PDF
+              </a>
+
+              <!-- Print Action -->
+              <button class="btn btn-outline" id="print-cv-btn">
+                <i class="fa-solid fa-print"></i> Print
+              </button>
+            </div>
+          </div>
+
+          <!-- Embedded PDF Viewer Frame / Web Document Viewer -->
+          <div class="cv-viewer-container">
+            <div class="cv-viewer-tabs">
+              <button class="cv-tab-btn active" data-tab="pdf-view"><i class="fa-solid fa-file-pdf"></i> Embedded PDF View</button>
+              <button class="cv-tab-btn" data-tab="web-view"><i class="fa-solid fa-align-left"></i> Formatted Text View</button>
+            </div>
+
+            <div class="cv-tab-pane active" id="pane-pdf-view">
+              <iframe src="Krish_Kumar_Jaiswal_Resume.pdf" class="cv-iframe" title="Krish Kumar Jaiswal Resume PDF"></iframe>
+            </div>
+
+            <div class="cv-tab-pane" id="pane-web-view">
+              <div class="printable-resume embedded-doc">
+                <div class="resume-header">
+                  <h2>KRISH KUMAR JAISWAL</h2>
+                  <div class="resume-contact-bar">
+                    <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/krish-jaiswal-2b0682354em</span>
+                    <span><i class="fa-brands fa-github"></i> github.com/krishjaiswal011</span>
+                    <span><i class="fa-solid fa-envelope"></i> krishjaiswal1314@gmail.com</span>
+                    <span><i class="fa-solid fa-phone"></i> +91 7209810196</span>
+                  </div>
+                </div>
+
+                <hr class="resume-divider">
+
+                <div class="resume-section">
+                  <h3>SKILLS</h3>
+                  <ul class="resume-list">
+                    <li><strong>Languages:</strong> Java, JavaScript, C, C++, DBMS / SQL</li>
+                    <li><strong>Technologies:</strong> HTML5, CSS3, Modern Responsive UI, AI Integration</li>
+                    <li><strong>Databases & Tools:</strong> MySQL, Git, GitHub, VS Code</li>
+                    <li><strong>Soft Skills:</strong> Problem Solving, Team Collaboration, Time Management, Adaptability</li>
+                  </ul>
+                </div>
+
+                <div class="resume-section">
+                  <h3>PROJECTS</h3>
+                  <div class="resume-item">
+                    <div class="resume-item-row">
+                      <h4>ECG HEART MONITORING SYSTEM</h4>
+                      <span class="resume-date">Aug 2025</span>
+                    </div>
+                    <p class="resume-type"><em>PROJECT Type: Hardware-based project</em></p>
+                    <ul class="resume-bullets">
+                      <li>Engineered an ECG based heart monitoring system to capture and monitor real–time electrical signals of the heart.</li>
+                      <li>Integrated ECG sensors and electrodes to acquire cardiac signals and calculate heart rate for continuous monitoring.</li>
+                      <li>Developed a real-time monitoring interface to display ECG waveforms and heart rate reading for easy observation.</li>
+                      <li>Gained hands-on experience in biochemical electronics, sensors, signals acquisition, and embedded systems.</li>
+                    </ul>
+                  </div>
+
+                  <div class="resume-item">
+                    <div class="resume-item-row">
+                      <h4>AI-BASED ACADEMIC FOCUS & DIGITAL ADDICTION RISK MONITORING SYSTEM</h4>
+                      <span class="resume-date">Sep 2025 - Oct 2025</span>
+                    </div>
+                    <ul class="resume-bullets">
+                      <li>Developed an AI-based system to monitor students’ academic focus and identify potential digital addiction risk using behavioral and usage patterns.</li>
+                      <li>Analyzed factors such as screen time, application usage, study duration, and digital activity to assess focus levels and addiction risk.</li>
+                      <li>Designed a monitoring dashboard to present focus scores, digital usage patterns, risk levels, and personalized insights in an easy-to-understand format.</li>
+                      <li>Implemented modular system components for data collection, risk analysis, monitoring, and report generation.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="resume-section">
+                  <h3>TRAINING</h3>
+                  <div class="resume-item">
+                    <div class="resume-item-row">
+                      <h4>AI Hands-on Bootcamp (Blocksblock × OpenAI) - Lovely Professional University</h4>
+                      <span class="resume-date">Jun 2025 - Jul 2025</span>
+                    </div>
+                    <ul class="resume-bullets">
+                      <li>Completed a hands-on Artificial Intelligence bootcamp gaining practical exposure to AI concepts and their real-world applications.</li>
+                      <li>Participated in applied learning activities focused on understanding and implementing AI concepts.</li>
+                      <li>Strengthened practical understanding of AI-based problem solving and emerging AI technologies.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="resume-section">
+                  <h3>CERTIFICATES</h3>
+                  <ul class="resume-bullets">
+                    <li>AI hands-on Bootcamp – blocksblock × Open AI | Certificate (Aug 2025)</li>
+                    <li>Programming Fundamentals using Python – Part 1 | Certificate (Jun 2025)</li>
+                    <li>Programming Fundamentals using Python – Part 2 | Certificate (Jun 2025)</li>
+                  </ul>
+                </div>
+
+                <div class="resume-section">
+                  <h3>ACHIEVEMENTS</h3>
+                  <ul class="resume-bullets">
+                    <li>Solved more than <strong>200 programming problems</strong> on online coding platforms during regular practice and learning.</li>
+                    <li>Achieved the <strong>LeetCode 100 Days Badge</strong> by maintaining consistent daily problem solving over time.</li>
+                    <li>Ranked <strong>Top 10 among 50+ teams</strong> in a college hackathon with an innovative web solution prototype.</li>
+                  </ul>
+                </div>
+
+                <div class="resume-section">
+                  <h3>EDUCATION</h3>
+                  <div class="resume-item">
+                    <div class="resume-item-row">
+                      <h4>Lovely Professional University, Phagwara, Punjab</h4>
+                      <span class="resume-date">Aug 2026 - Present</span>
+                    </div>
+                    <p>Bachelor of Technology - Computer Science and Engineering | <strong>CGPA: 6.4</strong></p>
+                  </div>
+                  <div class="resume-item">
+                    <div class="resume-item-row">
+                      <h4>Higher Secondary Education</h4>
+                      <span class="resume-date">May 2024 - Mar 2025</span>
+                    </div>
+                    <p>Percentage: <strong>67.6%</strong></p>
+                  </div>
+                  <div class="resume-item">
+                    <div class="resume-item-row">
+                      <h4>Secondary Education, Narkatiganj, Bihar</h4>
+                      <span class="resume-date">Jun 2022 - Mar 2023</span>
+                    </div>
+                    <p>Percentage: <strong>83.7%</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & TRAINING JOURNEY -->
+    <section id="timeline" class="timeline-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-route"></i> Roadmap</span>
+          <h2 class="section-title">Training & <span class="gradient-text">Education Journey</span></h2>
+          <p class="section-subtitle">A chronological walk through bootcamps, certifications, and academic milestones.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Timeline Item 1: LPU B.Tech -->
+          <div class="timeline-item right">
+            <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-badge-row">
+                <span class="timeline-tag academic">Degree Program</span>
+                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Aug 2026 - Present</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Technology in Computer Science & Engineering</h3>
+              <h4 class="timeline-subtitle"><i class="fa-solid fa-building-columns"></i> Lovely Professional University, Phagwara, Punjab</h4>
+              <p class="timeline-text">
+                Undergraduate studies in core computing sciences: Data Structures & Algorithms, Object-Oriented Programming (Java/C++), Database Management Systems (DBMS), Operating Systems, and Computer Networks.
+              </p>
+              <div class="timeline-stat-pill">
+                <span>Current CGPA: <strong>6.4</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: AI Bootcamp OpenAI x Blocksblock -->
+          <div class="timeline-item left">
+            <div class="timeline-icon"><i class="fa-solid fa-robot"></i></div>
+            <div class="timeline-card glass-panel highlight-border">
+              <div class="timeline-badge-row">
+                <span class="timeline-tag training">Professional Training</span>
+                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Jun 2025 - Aug 2025</span>
+              </div>
+              <h3 class="timeline-title">AI Hands-on Bootcamp (Blocksblock × OpenAI)</h3>
+              <h4 class="timeline-subtitle"><i class="fa-solid fa-certificate"></i> Lovely Professional University</h4>
+              <p class="timeline-text">
+                Intensive hands-on Artificial Intelligence bootcamp focused on practical exposure to modern AI concepts, prompt engineering, LLM workflows, applied AI problem-solving, and building intelligent prototypes.
+              </p>
+              <ul class="timeline-checklist">
+                <li><i class="fa-solid fa-check"></i> Participated in applied learning activities implementing AI algorithms.</li>
+                <li><i class="fa-solid fa-check"></i> Strengthened practical grasp of emerging generative & analytical AI models.</li>
+                <li><i class="fa-solid fa-check"></i> Awarded certificate of professional excellence upon completion.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Python Fundamentals -->
+          <div class="timeline-item right">
+            <div class="timeline-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-badge-row">
+                <span class="timeline-tag cert">Certification</span>
+                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> Jun 2025</span>
+              </div>
+              <h3 class="timeline-title">Programming Fundamentals using Python (Parts 1 & 2)</h3>
+              <h4 class="timeline-subtitle"><i class="fa-solid fa-award"></i> Verified Technical Certifications</h4>
+              <p class="timeline-text">
+                Mastered computational logic, memory model, data structures (lists, tuples, dictionaries, sets), functional paradigms, and modular software packaging in Python.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: High School -->
+          <div class="timeline-item left">
+            <div class="timeline-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="timeline-card glass-panel">
+              <div class="timeline-badge-row">
+                <span class="timeline-tag school">Secondary & Higher Secondary</span>
+                <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2022 - 2025</span>
+              </div>
+              <h3 class="timeline-title">Foundational & Science Education</h3>
+              <h4 class="timeline-subtitle"><i class="fa-solid fa-location-dot"></i> Narkatiganj, Bihar</h4>
+              <p class="timeline-text">
+                Completed 10th Secondary Schooling with distinction (<strong>83.7%</strong>) and 12th Higher Secondary Education with (<strong>67.6%</strong>) focusing on Mathematics, Physics, and Chemistry.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & BADGES SECTION -->
+    <section id="achievements" class="achievements-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-trophy"></i> Recognition</span>
+          <h2 class="section-title">Key <span class="gradient-text">Achievements</span> & Credentials</h2>
+          <p class="section-subtitle">Milestones demonstrating continuous learning, discipline, and competitive spirit.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Card 1: LeetCode 100 Days Badge -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-badge-icon leetcode-glow">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <div class="achievement-details">
+              <div class="achieve-pill">Consistency Award</div>
+              <h3>LeetCode 100 Days Badge</h3>
+              <p>Maintained a daily streak of algorithmic problem-solving for 100+ consecutive days, mastering core DSA concepts including Arrays, Strings, Two Pointers, Trees, and Dynamic Programming.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: 200+ Problems Solved -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-badge-icon solve-glow">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="achievement-details">
+              <div class="achieve-pill">Competitive Coding</div>
+              <h3>200+ Coding Problems Solved</h3>
+              <p>Successfully solved over two hundred algorithmic challenges across competitive programming platforms, building deep intuition for time and space complexity optimization.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Top 10 Hackathon Rank -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-badge-icon hackathon-glow">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <div class="achievement-details">
+              <div class="achieve-pill">Innovation Competition</div>
+              <h3>Top 10 Rank in College Hackathon</h3>
+              <p>Secured a top 10 position competing against 50+ inter-college teams by prototyping an innovative full-stack web application under strict time constraints.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTIFICATES SHOWCASE -->
+        <div class="certificates-container">
+          <h3 class="sub-section-title text-center"><i class="fa-solid fa-scroll"></i> Verified Certifications</h3>
+          <div class="certificates-grid">
+            <div class="cert-card glass-panel">
+              <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+              <div class="cert-info">
+                <h4>AI Hands-on Bootcamp</h4>
+                <p>Blocksblock × OpenAI @ LPU</p>
+                <span class="cert-date">Aug 2025</span>
+              </div>
+              <span class="cert-status-pill"><i class="fa-solid fa-circle-check"></i> Verified</span>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="cert-info">
+                <h4>Programming Fundamentals using Python - Part 1</h4>
+                <p>Foundational Algorithms & Data Types</p>
+                <span class="cert-date">Jun 2025</span>
+              </div>
+              <span class="cert-status-pill"><i class="fa-solid fa-circle-check"></i> Verified</span>
+            </div>
+
+            <div class="cert-card glass-panel">
+              <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="cert-info">
+                <h4>Programming Fundamentals using Python - Part 2</h4>
+                <p>Advanced Data Structures & OOP</p>
+                <span class="cert-date">Jun 2025</span>
+              </div>
+              <span class="cert-status-pill"><i class="fa-solid fa-circle-check"></i> Verified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge"><i class="fa-solid fa-envelope-open-text"></i> Connect</span>
+          <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Interested in collaborating, hiring for an internship, or discussing an innovative project? Reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Info Cards -->
+          <div class="contact-info-col">
+            <div class="info-card glass-panel">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-text">
+                <span class="info-label">Direct Email</span>
+                <a href="mailto:krishjaiswal1314@gmail.com" class="info-value">krishjaiswal1314@gmail.com</a>
+              </div>
+              <button class="copy-btn" data-copy="krishjaiswal1314@gmail.com" title="Copy Email">
+                <i class="fa-solid fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="info-card glass-panel">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <span class="info-label">Mobile Number</span>
+                <a href="tel:+917209810196" class="info-value">+91 7209810196</a>
+              </div>
+              <button class="copy-btn" data-copy="+917209810196" title="Copy Phone Number">
+                <i class="fa-solid fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="info-card glass-panel">
+              <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="info-text">
+                <span class="info-label">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/krish-jaiswal-2b0682354em/" target="_blank" rel="noopener noreferrer" class="info-value">krish-jaiswal-2b0682354em</a>
+              </div>
+              <a href="https://www.linkedin.com/in/krish-jaiswal-2b0682354em/" target="_blank" rel="noopener noreferrer" class="visit-link-btn" title="Open LinkedIn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="info-card glass-panel">
+              <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="info-text">
+                <span class="info-label">GitHub Repository</span>
+                <a href="https://github.com/krishjaiswal011" target="_blank" rel="noopener noreferrer" class="info-value">github.com/krishjaiswal011</a>
+              </div>
+              <a href="https://github.com/krishjaiswal011" target="_blank" rel="noopener noreferrer" class="visit-link-btn" title="Open GitHub">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-col">
+            <div class="form-container glass-panel">
+              <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Send a Direct Message</h3>
+              <form id="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name <span class="required">*</span></label>
+                    <div class="input-with-icon">
+                      <i class="fa-solid fa-user"></i>
+                      <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <span class="field-error" id="name-error"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Your Email <span class="required">*</span></label>
+                    <div class="input-with-icon">
+                      <i class="fa-solid fa-at"></i>
+                      <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <span class="field-error" id="email-error"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject <span class="required">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-tag"></i>
+                    <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Project Collaboration" required>
+                  </div>
+                  <span class="field-error" id="subject-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message <span class="required">*</span></label>
+                  <div class="input-with-icon textarea-icon">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <textarea id="message" name="message" rows="5" placeholder="Hi Krish, I'd like to discuss..." required></textarea>
+                  </div>
+                  <span class="field-error" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                  <span>Send Message</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">
+          <span>&lt;Krish.Jaiswal /&gt;</span>
+        </a>
+        <p class="footer-tagline">Building intelligent algorithms, hardware telemetry & responsive interfaces.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV / Resume</a>
+        <a href="#timeline">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/krish-jaiswal-2b0682354em/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/krishjaiswal011" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:krishjaiswal1314@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Krish Kumar Jaiswal. All rights reserved. Crafted with clean code & modern web standards.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- PROJECT DEEP DIVE MODAL -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-card project-modal-card">
+      <div class="modal-header">
+        <div class="modal-header-left" id="modal-project-header">
+          <!-- Populated via JS -->
+        </div>
+        <button class="modal-close-btn" id="close-project-modal" aria-label="Close Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-project-body">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
